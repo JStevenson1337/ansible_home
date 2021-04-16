@@ -7,13 +7,33 @@
   - name: Update Repositoy Index
     apt:
       update_cache: yes
+    when: ansible)distribution == "Ubuntu"
 
   - name: Install Apache2 Package
     apt:
       name: apache2
       state: latest
+    when: ansible)distribution == "Ubuntu"  
 
   - name:
     apt:
       name: libapache2-mod-php
       state: latest
+    when: ansible)distribution == "Ubuntu"  
+
+  - name: Update Repositoy Index
+    dnf:
+      update_cache: yes
+    when: ansible)distribution == "CentOS"
+
+  - name: Install Apache2 Package
+    dnf:
+      name: httpd
+      state: latest
+    when: ansible)distribution == "CentOS"
+
+  - name:
+    dnf:
+      name: php
+      state: latest
+    when: ansible)distribution == "CentOS"
