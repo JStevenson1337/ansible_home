@@ -1,3 +1,32 @@
-proxy apache_package=apache2 php_package=libapache2-mod-php
-vpn apache_package=apache2 php_package=libapache2-mod-php
-log apache_package=apache2 php_package=libapache2-mod-php
+[ubuntu]
+
+beta
+proxy
+vpn
+log
+control
+dns1
+ds1
+home
+
+
+[bsd]
+media
+cloud
+truenas
+
+[debian]
+phones
+pve1
+pve2
+pve3
+pve4
+
+[containers]
+file
+helpdesk
+sync
+debtest
+artest
+ubtest
+minecraft
