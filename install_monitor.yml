@@ -1,0 +1,13 @@
+---
+
+- hosts: ubuntu
+  become: true
+  tasks:
+
+  - name: Install
+    package:
+      name:
+        - "{{ apache_package }}"
+        - "{{ php_package }}"
+      state: latest
+      update_cache = yes
