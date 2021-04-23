@@ -6,14 +6,19 @@ vpn
 log
 control
 dns1
-ds1
 home
-
+docker
 
 [bsd]
 media
 cloud
 truenas
+av
+speedtest
+openvpn
+duplicati
+grafana
+library
 
 [debian]
 phones
