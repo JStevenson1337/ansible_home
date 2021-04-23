@@ -1,0 +1,17 @@
+---
+
+---
+- hosts: test_inventory
+ become: yes
+ become_method: sudo
+ tasks:
+ - name: Insert New line
+ blockinfile:
+ path: /etc/snmp/snmpd.conf
+ insertafter: "tsh"
+ content: |
+ rocommunity private librenms.thestevensonhome.com
+
+- name: Restart SNMPD Service
+ action: service name=snmpd state=restarted
+
