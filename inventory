@@ -4,21 +4,11 @@ beta
 proxy
 vpn
 log
-control
 dns1
 home
 docker
+web
 
-[bsd]
-media
-cloud
-truenas
-av
-speedtest
-openvpn
-duplicati
-grafana
-library
 
 [debian]
 phones
@@ -30,8 +20,12 @@ pve4
 [containers]
 file
 helpdesk
-sync
 debtest
-artest
 ubtest
 minecraft
+artest
+ubtest
+
+[Excluded]
+#librenms
+#control
