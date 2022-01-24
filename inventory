@@ -1,31 +1,29 @@
 [ubuntu]
-
-beta
-proxy
-vpn
-log
-dns1
-home
 docker
-web
+monitor
+plex
+overwatch
+nextcloud
+sync
 
+[rhel]
+nimbus
+srv1
+srv2
+srv3
+pbx
+zabbix
 
-[debian]
-phones
-pve1
-pve2
-pve3
-pve4
+[proxmox]
+host
+node1
+node2
+node3
+node4
+backup
 
 [containers]
-file
-helpdesk
-debtest
-ubtest
-minecraft
-artest
-ubtest
 
-[Excluded]
-#librenms
-#control
+
+[bsd-server]
+file
