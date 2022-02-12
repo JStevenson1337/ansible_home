@@ -1,4 +1,4 @@
 *.swn
 *.swo
 *.swp
-
+.*.json
