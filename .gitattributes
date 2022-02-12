@@ -1,4 +1,4 @@
-secretfile filter=git-crypt diff=git-crypt
+./scripts/conf** filter=git-crypt diff=git-crypt
 *.key filter=git-crypt diff=git-crypt
 *.cfg filter=git-crypt diff=git-crypt
 *inventory filter=git-crypt diff=git-crypt
